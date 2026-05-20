@@ -387,10 +387,11 @@ animation = &"armed_down"
 autoplay = "normal_right"
 frame_progress = 0.14175218
 
-[node name="ArmedEffectsSprite" type="AnimatedSprite2D" parent="." unique_id=126679011]
-visible = false
+[node name="ArmedEffectSprite" type="AnimatedSprite2D" parent="." unique_id=126679011]
 sprite_frames = SubResource("SpriteFrames_6lu7o")
 frame_progress = 0.7860149
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1152306012]
 shape = SubResource("CircleShape2D_8rkx0")
+
+[node name="ShootingTimer" type="Timer" parent="." unique_id=884580476]
