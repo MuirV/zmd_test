@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dwh0hrleh5r28"]
 
 [ext_resource type="Script" uid="uid://5lnjn2kax13" path="res://scene/player.gd" id="1_fvtld"]
-[ext_resource type="Texture2D" uid="uid://bqfi6qlrbptg0" path="res://resources/texture/W.png" id="1_xo3ru"]
-[ext_resource type="Texture2D" uid="uid://d0op7c4urriys" path="res://resources/texture/浮游炮.png" id="2_hjaqi"]
+[ext_resource type="Texture2D" uid="uid://bqfi6qlrbptg0" path="res://texture/W.png" id="1_xo3ru"]
+[ext_resource type="Texture2D" uid="uid://d0op7c4urriys" path="res://texture/浮游炮.png" id="2_hjaqi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hjaqi"]
 atlas = ExtResource("1_xo3ru")
@@ -379,8 +379,10 @@ animations = [{
 radius = 6.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1018514045]
-collision_layer = 2
 script = ExtResource("1_fvtld")
+move_speed = null
+fire_interval = null
+bullet_spawn_distance = null
 
 [node name="BodySprite" type="AnimatedSprite2D" parent="." unique_id=376000585]
 sprite_frames = SubResource("SpriteFrames_xj5ck")
@@ -388,7 +390,7 @@ animation = &"armed_down"
 autoplay = "normal_right"
 frame_progress = 0.14175218
 
-[node name="ArmedEffectSprite" type="AnimatedSprite2D" parent="." unique_id=126679011]
+[node name="ArmedEffectsSprite" type="AnimatedSprite2D" parent="." unique_id=126679011]
 sprite_frames = SubResource("SpriteFrames_6lu7o")
 frame_progress = 0.7860149
 

@@ -1,8 +1,12 @@
 [gd_scene format=4 uid="uid://4pf82k3t47p2"]
 
-[ext_resource type="Texture2D" uid="uid://cc4waps7bnr68" path="res://texture/瓦片.png" id="1_dbls1"]
-[ext_resource type="Texture2D" uid="uid://dybvium78oqii" path="res://texture/动态瓦片.png" id="2_33cqm"]
+[ext_resource type="Texture2D" uid="uid://cc4waps7bnr68" path="res://resources/texture/瓦片.png" id="1_dbls1"]
+[ext_resource type="Texture2D" uid="uid://dybvium78oqii" path="res://resources/texture/动态瓦片.png" id="2_33cqm"]
 [ext_resource type="PackedScene" uid="uid://dwh0hrleh5r28" path="res://scene/player.tscn" id="3_33cqm"]
+[ext_resource type="PackedScene" uid="uid://ln1emqlknvir" path="res://scene/pickup.tscn" id="4_qpk70"]
+[ext_resource type="Resource" uid="uid://dw5wcydsbwblt" path="res://resources/config/pickup_rapid.tres" id="5_ll5lq"]
+[ext_resource type="Resource" uid="uid://dvo0ngsegpb0v" path="res://resources/config/pickup_speed.tres" id="6_17rxn"]
+[ext_resource type="Resource" uid="uid://b4d5b5tu013lj" path="res://resources/config/pickup_spiral.tres" id="7_yq8tf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
 texture = ExtResource("1_dbls1")
@@ -130,3 +134,15 @@ shape = SubResource("SegmentShape2D_p1ry8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBounds/RightBoundary" unique_id=567820490]
 shape = SubResource("SegmentShape2D_xlg7c")
+
+[node name="Pickup" parent="." unique_id=412745958 instance=ExtResource("4_qpk70")]
+position = Vector2(152, 72)
+config = ExtResource("5_ll5lq")
+
+[node name="Pickup2" parent="." unique_id=780755866 instance=ExtResource("4_qpk70")]
+position = Vector2(152, 112)
+config = ExtResource("6_17rxn")
+
+[node name="Pickup3" parent="." unique_id=635453788 instance=ExtResource("4_qpk70")]
+position = Vector2(184, 128)
+config = ExtResource("7_yq8tf")
