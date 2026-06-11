@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://buggf5gaogjro"]
+
+[ext_resource type="Texture2D" uid="uid://43uv7f83dnxu" path="res://resources/texture/源石虫.png" id="1_6hxpo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3aj1o"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxkrb"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vycqs"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6go3y"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv65g"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnq3i"]
+atlas = ExtResource("1_6hxpo")
+region = Rect2(64, 96, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3aj1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxkrb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vycqs")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6go3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jv65g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnq3i")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
